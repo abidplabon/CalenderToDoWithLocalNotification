@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:get_storage/get_storage.dart';
 
 class ThemeServices{
@@ -13,6 +12,6 @@ class ThemeServices{
 
   void switchTheme(){     //ontap changeable function
     Get.changeThemeMode(_loadThemeFromBox()?ThemeMode.light:ThemeMode.dark); //as return false from the _loadThemeFromBox so we are toggling here
-    _saveThemeToBox(!_loadThemeFromBox()); //not true false but opposite of the above condition with "!"
+      _saveThemeToBox(!_loadThemeFromBox()); //not true false but opposite of the above condition with "!"
   }
 }
